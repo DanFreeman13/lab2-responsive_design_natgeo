@@ -1,11 +1,8 @@
-/*
-    the title fonts are 'Gill Sans', 'Century Gothic', sans-serif.
-    the fancy header font stack are 'Georgia', 'Palatino', serif.
-    yellow color is #fecd2f
-    dark grey color is #333333
-    light grey color is #aaaaaa
-*/
+//VARIABLES
 
+$desktopwidth: 1024px;
+$tabletwidth: 768px;
+$mobilewidth: 300px;
 $titlesFont: 'Josefin Sans', sans-serif;
 $normaltextFont: helvetica, sans-serif;
 $yellow: #fecd2f;
@@ -28,7 +25,11 @@ body {
 	margin: 0;
 }
 
-a {
+div {
+	outline: 2px solid red;
+}
+
+h1, a {
 	text-decoration: none;
 }
 
@@ -46,6 +47,9 @@ a {
 		display: flex;
 		padding: 10px;
 		justify-content: flex-end;
+		&__bars {
+		display: none;
+	}
 	}
 	&__logo {
 		display: inline-block;
@@ -85,12 +89,12 @@ a {
 		margin-bottom: 20px;
 	}
 	&__maintitle {
+		font-size: 55px;
 		font-family: $titlesFont;
 		letter-spacing: 10px;
 		font-weight: normal;
 		color: #000000;
-		margin: 90px auto;
-		font-size: 55px;
+		margin: 90px 0;
 	}
 
 	&__subtitle {
@@ -103,7 +107,6 @@ a {
 	}
 	&__seemore {
 		font-family: $titlesFont;
-
 		letter-spacing:1px;
 		font-weight: normal;
 		margin: 20px auto;
@@ -120,7 +123,7 @@ a {
 
 	&__center {
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		margin-bottom: 20px;
 
 		&__image {
@@ -129,8 +132,9 @@ a {
 		}
 		&__text {
 			color: black;
-			display: inline-block;
-			width: 44%;
+			display: flex;
+			flex-direction: column;
+			width: 45%;
 			margin-top: 0;
 			padding-left: 10px;
 			padding-right: 0;
@@ -162,7 +166,7 @@ a {
 		padding: 0;
 	}
 
-	//Black section
+	//BLACK SECTION
 
 	&__black{
 		margin: 0 10px;
@@ -172,7 +176,6 @@ a {
 		flex-wrap: nowrap;
 		align-items: center; 
 		&__textsec {
-			display: inline-block;
 			width: 25%;
 			margin: 50px;
 			display: flex;
@@ -180,6 +183,7 @@ a {
 			justify-content: space-around;
 		}
 		&__subtitle {
+			font-size: 25px;
 			font-family: $titlesFont;
 			text-align: center;
 		}
@@ -266,4 +270,136 @@ a {
 		}
 
 	}	
+}
+
+@media screen and (max-width: $desktopwidth) {
+	
+
+	.natgeo {
+		width: 100%;
+		&__link {
+			display: none;
+		}
+
+		&__topbar{
+			&__bars {
+				color: $darkgray;
+				padding: 0;
+				display: block;
+				font-size: 30px;
+				margin: 0 10px;
+			}
+		}
+
+		//CENTRAL SECTION
+
+		&__central {
+			width: auto;
+			margin: 0 20px;
+		}
+
+		//BLACK SECTION
+
+		&__black {
+			margin-top: 20px;
+			flex-wrap: wrap;
+			&__textsec {
+				width: 45%;
+				margin: 25px;
+			}
+			&__subtitle {
+				font-size: 20px;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: $tabletwidth) {
+
+	.natgeo {
+
+		&__central {
+			width: auto;
+			margin: 0 10px;
+		}
+		&__maintitle {
+			font-size: 25px;
+			margin: 40px 0
+		}
+		&__subtitle {
+			font-size: 20px;
+		}
+		&__seemore {
+			font-size: 15px;
+			margin-bottom: 30px;
+		}
+		
+		&__center {
+			flex-direction: column;
+			&__image, &__text {
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			&__titlebox, &__parr {
+				margin: 5px 0;
+			}
+			&__showmore {
+				width: auto;
+				margin: 0;
+			}
+		}
+
+		&__image {
+			width: 90%;
+			margin: 0 5%;
+		}
+
+		&__bottom {
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+
+//BLACK SECTION
+
+		&__black {
+			&__textsec {
+				margin: 50px;
+				width: 100%;
+			}
+			&__subtitle {
+				font-size: 15px;
+			}
+			&__social {
+				font-size: 20px;
+			}
+			&__parr {
+				font-size: 10px;
+			}
+
+			&__smallink {
+				font-size: 13px;
+			}
+		}
+
+//BOTTOM SECTION
+
+		&__bottom {
+			&__advert {
+				&__1, &__2 {
+					width: 85%;
+					margin: 0 auto;
+					border: none;
+					padding-left: 0; 
+				}
+				&__title {
+					font-size: 18px;
+				}
+				&__input {
+					width: 50%;
+				}
+			}
+		}
+	}
 }
