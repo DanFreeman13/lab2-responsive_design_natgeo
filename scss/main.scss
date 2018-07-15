@@ -1,0 +1,269 @@
+/*
+    the title fonts are 'Gill Sans', 'Century Gothic', sans-serif.
+    the fancy header font stack are 'Georgia', 'Palatino', serif.
+    yellow color is #fecd2f
+    dark grey color is #333333
+    light grey color is #aaaaaa
+*/
+
+$titlesFont: 'Josefin Sans', sans-serif;
+$normaltextFont: helvetica, sans-serif;
+$yellow: #fecd2f;
+$darkgray: #333333;
+$mediumgray: #aaaaaa;
+$lightgray: #dddddd;
+$twittercolor: #38a9ee;
+$facebookcolor: #425499;
+$instagramcolor: #577da5;
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+* {
+	box-sizing: content-box;
+	font-family: $normaltextFont;
+}
+
+body {
+	background-color: #fff;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.natgeo {
+	width: 100%;
+	margin: 0;
+	&__header {
+		font-family: $titlesFont;
+		border-bottom: 3px solid $lightgray;
+		margin: 0;
+	}
+	&__topbar {
+		position: relative;
+		height: 35px;
+		display: flex;
+		padding: 10px;
+		justify-content: flex-end;
+	}
+	&__logo {
+		display: inline-block;
+		height: 49px;
+		position: absolute;
+		top: 2px;
+	}
+
+	&__link {
+		display: inline-block;
+		width: 260px;
+		border-left: 2px solid $yellow;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__element {
+		font-size: 20px;
+		color: #c1c1c1;
+		font-family: $titlesFont;
+		font-weight: bold;
+		letter-spacing: 2px;
+		width: 100%; 
+		text-align: center;
+		padding: 10px 0;
+		margin: 0 auto;
+	}
+	
+	//CENTRAL SECTION
+
+	&__central {
+		width: 1024px;
+		margin: 0 auto;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	&__maintitle {
+		font-family: $titlesFont;
+		letter-spacing: 10px;
+		font-weight: normal;
+		color: #000000;
+		margin: 90px auto;
+		font-size: 55px;
+	}
+
+	&__subtitle {
+		font-family: $titlesFont;
+		letter-spacing:4px;
+		font-weight: normal;
+		color: #000000;
+		margin: 20px auto;
+		font-size: 25px;
+	}
+	&__seemore {
+		font-family: $titlesFont;
+
+		letter-spacing:1px;
+		font-weight: normal;
+		margin: 20px auto;
+		font-size: 20px;
+		&__link{
+			width: 100%;
+			color: #000000;
+			position: relative;
+			border-bottom: 3px solid $yellow;
+		}
+	}
+
+	//Travel Photography section
+
+	&__center {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+
+		&__image {
+			width: 55%;
+			display: inline-block;
+		}
+		&__text {
+			color: black;
+			display: inline-block;
+			width: 44%;
+			margin-top: 0;
+			padding-left: 10px;
+			padding-right: 0;
+		}
+		&__titlebox {
+			margin-top:0;
+		}
+
+		&__showmore {
+			text-align: center;
+			margin: 0 15%; 
+			width: 70%;
+			padding: 10px 0;
+			font-size: 15px;
+			background-color: $yellow;
+			border: 3px solid $darkgray;
+			margin-bottom: 50px;
+			&__link {
+				color: $darkgray;
+			}
+		}
+	}
+
+	//Photos of the year section
+
+	&__image {
+		width: 80%;
+		margin: 0 10%;
+		padding: 0;
+	}
+
+	//Black section
+
+	&__black{
+		margin: 0 10px;
+		color: white;
+		background-color: $darkgray;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center; 
+		&__textsec {
+			display: inline-block;
+			width: 25%;
+			margin: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		&__subtitle {
+			font-family: $titlesFont;
+			text-align: center;
+		}
+		&__social {
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: nowrap;
+			width: 50%;
+			font-size: 30px;
+			justify-content: space-around;
+			&__twitter {
+				margin: 0 10px;
+				color: $twittercolor;
+			}
+			&__facebook {
+				margin: 0 10px;
+				color: $facebookcolor;
+			}
+			&__instagram {
+				margin: 0 10px;
+				color: $instagramcolor;
+			}
+		}
+		&__parr {
+			font-size: 13px;
+			font-weight: bold;
+			text-align: center;
+		}
+		&__smallink {
+			font-size: 17px;
+			text-align: center;
+			font-weight: bolder;
+			position: relative;
+			color: white;
+			border-bottom: 3px solid $yellow;
+			}
+		
+	}
+
+	&__bottom {
+		margin: 0 10px;
+		background-color:$lightgray;
+		display: flex;
+		flex-wrap: nowrap;
+		&__advert {
+			&__1, &__2 {
+			border-left: 3px solid $mediumgray;
+			margin: 20px;
+			padding: 0 20px;
+			}
+			&__1 {
+				width: 70%;
+			}
+			&__2 {
+				width: 30%;
+				height: 77px;
+			}
+			&__title {
+				padding-top: 2px;
+				letter-spacing: 2px;
+				align-items: center;
+				margin: 10px 0;
+				margin-top: 20px;
+				font-size: 25px;
+				font-family: $titlesFont;
+				color: black;
+			}
+			&__input {
+				width: 15%;
+				height: 21px;
+				margin-bottom: 20px;
+				border: 2px solid $mediumgray;
+			}
+			&__button {
+				font-size: 13px;
+				color: $darkgray;
+				padding: 5px;
+				text-align: center;
+				width: 80px;
+				border: none;
+				height: 20px;
+				background-color: $yellow;
+			}
+		}
+
+	}	
+}

@@ -1,0 +1,197 @@
+/*
+    the title fonts are 'Gill Sans', 'Century Gothic', sans-serif.
+    the fancy header font stack are 'Georgia', 'Palatino', serif.
+    yellow color is #fecd2f
+    dark grey color is #333333
+    light grey color is #aaaaaa
+*/
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+* {
+  box-sizing: content-box;
+  font-family: helvetica, sans-serif; }
+
+body {
+  background-color: #fff;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.natgeo {
+  width: 100%;
+  margin: 0; }
+  .natgeo__header {
+    font-family: "Josefin Sans", sans-serif;
+    border-bottom: 3px solid #dddddd;
+    margin: 0; }
+  .natgeo__topbar {
+    position: relative;
+    height: 35px;
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end; }
+  .natgeo__logo {
+    display: inline-block;
+    height: 49px;
+    position: absolute;
+    top: 2px; }
+  .natgeo__link {
+    display: inline-block;
+    width: 260px;
+    border-left: 2px solid #fecd2f;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .natgeo__element {
+    font-size: 20px;
+    color: #c1c1c1;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto; }
+  .natgeo__central {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20px; }
+  .natgeo__maintitle {
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 10px;
+    font-weight: normal;
+    color: #000000;
+    margin: 90px auto;
+    font-size: 55px; }
+  .natgeo__subtitle {
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 4px;
+    font-weight: normal;
+    color: #000000;
+    margin: 20px auto;
+    font-size: 25px; }
+  .natgeo__seemore {
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin: 20px auto;
+    font-size: 20px; }
+    .natgeo__seemore__link {
+      width: 100%;
+      color: #000000;
+      position: relative;
+      border-bottom: 3px solid #fecd2f; }
+  .natgeo__center {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; }
+    .natgeo__center__image {
+      width: 55%;
+      display: inline-block; }
+    .natgeo__center__text {
+      color: black;
+      display: inline-block;
+      width: 44%;
+      margin-top: 0;
+      padding-left: 10px;
+      padding-right: 0; }
+    .natgeo__center__titlebox {
+      margin-top: 0; }
+    .natgeo__center__showmore {
+      text-align: center;
+      margin: 0 15%;
+      width: 70%;
+      padding: 10px 0;
+      font-size: 15px;
+      background-color: #fecd2f;
+      border: 3px solid #333333;
+      margin-bottom: 50px; }
+      .natgeo__center__showmore__link {
+        color: #333333; }
+  .natgeo__image {
+    width: 80%;
+    margin: 0 10%;
+    padding: 0; }
+  .natgeo__black {
+    margin: 0 10px;
+    color: white;
+    background-color: #333333;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; }
+    .natgeo__black__textsec {
+      display: inline-block;
+      width: 25%;
+      margin: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+    .natgeo__black__subtitle {
+      font-family: "Josefin Sans", sans-serif;
+      text-align: center; }
+    .natgeo__black__social {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: nowrap;
+      width: 50%;
+      font-size: 30px;
+      justify-content: space-around; }
+      .natgeo__black__social__twitter {
+        margin: 0 10px;
+        color: #38a9ee; }
+      .natgeo__black__social__facebook {
+        margin: 0 10px;
+        color: #425499; }
+      .natgeo__black__social__instagram {
+        margin: 0 10px;
+        color: #577da5; }
+    .natgeo__black__parr {
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center; }
+    .natgeo__black__smallink {
+      font-size: 17px;
+      text-align: center;
+      font-weight: bolder;
+      position: relative;
+      color: white;
+      border-bottom: 3px solid #fecd2f; }
+  .natgeo__bottom {
+    margin: 0 10px;
+    background-color: #dddddd;
+    display: flex;
+    flex-wrap: nowrap; }
+    .natgeo__bottom__advert__1, .natgeo__bottom__advert__2 {
+      border-left: 3px solid #aaaaaa;
+      margin: 20px;
+      padding: 0 20px; }
+    .natgeo__bottom__advert__1 {
+      width: 70%; }
+    .natgeo__bottom__advert__2 {
+      width: 30%;
+      height: 77px; }
+    .natgeo__bottom__advert__title {
+      padding-top: 2px;
+      letter-spacing: 2px;
+      align-items: center;
+      margin: 10px 0;
+      margin-top: 20px;
+      font-size: 25px;
+      font-family: "Josefin Sans", sans-serif;
+      color: black; }
+    .natgeo__bottom__advert__input {
+      width: 15%;
+      height: 21px;
+      margin-bottom: 20px;
+      border: 2px solid #aaaaaa; }
+    .natgeo__bottom__advert__button {
+      font-size: 13px;
+      color: #333333;
+      padding: 5px;
+      text-align: center;
+      width: 80px;
+      border: none;
+      height: 20px;
+      background-color: #fecd2f; }
