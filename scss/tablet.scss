@@ -1,0 +1,44 @@
+//TABLET MEDIA QUERIES
+
+@media screen and (max-width: $desktopwidth) {
+	
+
+	.natgeo {
+		width: 100%;
+		&__link {
+			display: none;
+		}
+
+		&__topbar{
+			&__bars {
+				color: $darkgray;
+				padding: 0;
+				display: block;
+				font-size: 30px;
+				margin: 0 10px;
+			}
+		}
+
+		//CENTRAL SECTION
+
+		&__central {
+			width: auto;
+			margin: 0 20px;
+		}
+
+		//BLACK SECTION
+
+		&__black {
+			margin-top: 20px;
+			flex-wrap: wrap;
+			&__textsec {
+				width: 45%;
+				margin: 25px;
+			}
+			&__subtitle {
+				font-size: 20px;
+			}
+		}
+	}
+
+}
